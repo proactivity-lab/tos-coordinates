@@ -13,8 +13,8 @@ module ConfCoordinatesP {
 		interface Conf<int32_t> as Latitude;
 		interface Conf<int32_t> as Longitude;
 		interface Conf<int32_t> as Elevation;
-		interface Conf<int32_t> as UtmX;
-		interface Conf<int32_t> as UtmY;
+		interface Conf<int32_t> as UtmEasting;
+		interface Conf<int32_t> as UtmNorthing;
 		interface Conf<int32_t> as UtmZone;
 		interface Conf<int32_t> as UtmBand;
 		interface Conf<int32_t> as Yaw;
@@ -41,8 +41,8 @@ implementation {
 	}
 
 	command error_t GetUTM.get(coordinates_utm_t* value) {
-		value->x = call UtmX.get();
-		value->y = call UtmY.get();
+		value->easting = call UtmEasting.get();
+		value->northing = call UtmNorthing.get();
 		value->elevation = call Elevation.get();
 		value->zone = call UtmZone.get();
 		value->band = call UtmBand.get();
@@ -59,8 +59,8 @@ implementation {
 	event void Latitude.changed(int32_t value) { debug1("Latitude %"PRIi32, value); }
 	event void Longitude.changed(int32_t value) { debug1("Longitude %"PRIi32, value); }
 	event void Elevation.changed(int32_t value) { debug1("Elevation %"PRIi32, value); }
-	event void UtmX.changed(int32_t value) { debug1("UtmX %"PRIi32, value); }
-	event void UtmY.changed(int32_t value) { debug1("UtmY %"PRIi32, value); }
+	event void UtmEasting.changed(int32_t value) { debug1("UtmEasting %"PRIi32, value); }
+	event void UtmNorthing.changed(int32_t value) { debug1("UtmNorthing %"PRIi32, value); }
 	event void UtmZone.changed(int32_t value) { debug1("UtmZone %"PRIi32, value); }
 	event void UtmBand.changed(int32_t value) { debug1("UtmBand %c (%"PRIu32")", (char)value, value); }
 	event void Yaw.changed(int32_t value) { debug1("Yaw %"PRIi32, value); }

@@ -30,13 +30,13 @@ implementation {
 	ConfCoordinatesP.Elevation -> Elevation;
 	ConfCoordinatesP.Defaults -> Elevation;
 
-	components new ConfInt32C(4) as UtmX;
-	ConfCoordinatesP.UtmX -> UtmX;
-	ConfCoordinatesP.Defaults -> UtmX;
+	components new ConfInt32C(4) as UtmEasting;
+	ConfCoordinatesP.UtmEasting -> UtmEasting;
+	ConfCoordinatesP.Defaults -> UtmEasting;
 
-	components new ConfInt32C(5) as UtmY;
-	ConfCoordinatesP.UtmY -> UtmY;
-	ConfCoordinatesP.Defaults -> UtmY;
+	components new ConfInt32C(5) as UtmNorthing;
+	ConfCoordinatesP.UtmNorthing -> UtmNorthing;
+	ConfCoordinatesP.Defaults -> UtmNorthing;
 
 	components new ConfInt32C(6) as UtmZone;
 	ConfCoordinatesP.UtmZone -> UtmZone;

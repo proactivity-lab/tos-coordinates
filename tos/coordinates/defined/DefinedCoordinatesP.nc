@@ -20,8 +20,8 @@ implementation {
 	}
 
 	command error_t GetUTM.get(coordinates_utm_t* value) {
-		value->x = DEFINED_DEVICE_UTM_X;
-		value->y = DEFINED_DEVICE_UTM_Y;
+		value->easting = DEFINED_DEVICE_UTM_EASTING;
+		value->northing = DEFINED_DEVICE_UTM_NORTHING;
 		value->elevation = DEFINED_DEVICE_ELEVATION;
 		value->zone = DEFINED_DEVICE_UTM_ZONE;
 		value->band = DEFINED_DEVICE_UTM_BAND;

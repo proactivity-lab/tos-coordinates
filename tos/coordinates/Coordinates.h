@@ -12,8 +12,8 @@ typedef struct coordinates_geo_t {
 } coordinates_geo_t;
 
 typedef struct coordinates_utm_t {
-	int32_t x;         // centimeters
-	int32_t y;         // centimeters
+	int32_t easting;   // centimeters
+	int32_t northing;  // centimeters
 	int32_t elevation; // centimeters
 	uint8_t zone;      // UTM zone
 	char band;         // UTM latitude band
