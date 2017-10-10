@@ -4,6 +4,7 @@
  * @author Raido Pahtma
  * @license MIT
  */
+#include "Coordinates.h"
 module PrintCoordinatesP {
 	uses {
 		interface GetStruct<coordinates_geo_t> as GetGeo;
