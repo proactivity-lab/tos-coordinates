@@ -12,8 +12,8 @@ module DevParamCoordinatesP {
 	uses {
 		interface Get<int32_t> as Latitude;
 		interface Get<int32_t> as Longitude;
-
 		interface Get<int32_t> as Elevation;
+		interface Get<char>    as FixType;
 
 		interface Get<int32_t> as Northing;
 		interface Get<int32_t> as Easting;
@@ -31,6 +31,7 @@ implementation {
 		value->latitude  = call Latitude.get();
 		value->longitude = call Longitude.get();
 		value->elevation = call Elevation.get();
+		value->type = call FixType.get();
 		return SUCCESS;
 	}
 

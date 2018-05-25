@@ -22,9 +22,12 @@ implementation {
 	DevParamCoordinatesP.Latitude  -> DevicePositionParametersC.Latitude;
 	DevParamCoordinatesP.Longitude -> DevicePositionParametersC.Longitude;
 	DevParamCoordinatesP.Elevation -> DevicePositionParametersC.Elevation;
+	DevParamCoordinatesP.FixType   -> DevicePositionParametersC.FixType;
+
 	DevParamCoordinatesP.Pitch     -> DevicePositionParametersC.Pitch;
 	DevParamCoordinatesP.Yaw       -> DevicePositionParametersC.Yaw;
 	DevParamCoordinatesP.Roll      -> DevicePositionParametersC.Roll;
+
 	DevParamCoordinatesP.Northing  -> DevicePositionParametersC.Northing;
 	DevParamCoordinatesP.Easting   -> DevicePositionParametersC.Easting;
 	DevParamCoordinatesP.Band      -> DevicePositionParametersC.Band;

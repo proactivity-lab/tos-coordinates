@@ -16,6 +16,7 @@ implementation {
 		value->latitude  = DEFINED_DEVICE_LATITUDE;
 		value->longitude = DEFINED_DEVICE_LONGITUDE;
 		value->elevation = DEFINED_DEVICE_ELEVATION;
+		value->type = "A";
 		return SUCCESS;
 	}
 

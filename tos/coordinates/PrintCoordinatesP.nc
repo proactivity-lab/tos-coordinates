@@ -24,7 +24,7 @@ implementation {
 		{
 			coordinates_geo_t gps;
 			error_t err = call GetGeo.get(&gps);
-			logger(err == SUCCESS ? LOG_INFO1: LOG_ERR1, "gps (%"PRIi32";%"PRIi32";%"PRIi32")", gps.latitude, gps.longitude, gps.elevation);
+			logger(err == SUCCESS ? LOG_INFO1: LOG_ERR1, "gps (%"PRIi32";%"PRIi32";%"PRIi32") (%c)", gps.latitude, gps.longitude, gps.elevation, gps.type);
 		}
 		#endif // GPS
 		#if __LOG_LEVEL__ & LOG_INFO2

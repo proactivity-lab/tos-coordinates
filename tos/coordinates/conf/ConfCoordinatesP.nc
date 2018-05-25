@@ -37,6 +37,7 @@ implementation {
 		value->latitude  = call Latitude.get();
 		value->longitude = call Longitude.get();
 		value->elevation = call Elevation.get();
+		value->type = "F";
 		return SUCCESS;
 	}
 
